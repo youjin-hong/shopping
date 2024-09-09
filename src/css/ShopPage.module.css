@@ -1,0 +1,47 @@
+.ShopPage {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.ShopPage h2 {
+  width: 100%;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 1rem;
+}
+
+.filterCon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 3rem 0 2rem;
+}
+.filterCon button {
+  background-color: goldenrod;
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.filterCon button:hover {
+  background-color: rgb(162, 121, 16);
+  transition: 0.3s;
+}
+
+.cardCon {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 900px) {
+  .ShopPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .filterCon {
+    display: flex;
+    flex-direction: row;
+  }
+}

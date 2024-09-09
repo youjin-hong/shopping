@@ -1,0 +1,52 @@
+.Header {
+  border: 1px solid red;
+  width: calc(100% - 4rem);
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+.Header img {
+  object-fit: cover;
+  width: 10%;
+  height: 100%;
+  min-width: 120px;
+  cursor: pointer;
+}
+.Header nav {
+  display: flex;
+  gap: 1rem;
+}
+.Header nav div {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.Header nav div *:hover {
+  color: goldenrod;
+  transition: 0.3s;
+}
+.hamBtn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.hamBtn:hover {
+  color: goldenrod;
+  transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  .Header nav div {
+    display: none;
+  }
+  .hamBtn {
+    display: block;
+  }
+}

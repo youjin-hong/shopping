@@ -1,0 +1,21 @@
+.BannerList {
+  border: 1px solid red;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.imgList img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.BannerList .imgInfo {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+}
+.BannerList .imgInfo button {
+  cursor: pointer;
+}

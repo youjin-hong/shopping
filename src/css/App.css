@@ -1,0 +1,10 @@
+.mw {
+  border: 1px solid black;
+  max-width: 1300px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.wrap {
+  overflow: hidden;
+}
