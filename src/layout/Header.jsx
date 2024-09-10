@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import style from "../css/Header.module.css";
 
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <header className={style.Header}>
       <h1 hidden>header</h1>
-      <img src="/img/logo.svg" alt="logo" />
+      <img src="/img/logo.svg" alt="logo" onClick={() => navigate("/")} />
       <nav>
         <div>
           <Link to="/shop">Shop</Link>
